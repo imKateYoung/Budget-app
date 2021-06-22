@@ -1,0 +1,32 @@
+.container{
+    border: double;
+    border-radius: 10px;
+}
+
+.secondary-container{
+    margin-bottom: 2%;
+}
+.title{
+    text-align: left;
+    text-decoration: teal;
+    font-weight: bolder;
+    color: teal;
+    font-size: 2rem;
+    
+}
+
+.sub-title{
+     text-align: left;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.paragraph {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.list {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
