@@ -1,44 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
 
-.App {
-  text-align: center;
-  font-family: "Calistoga";
+ * {
+   margin:0;
+   padding: 0;
+ }
 
-}
+ body {
+   background-color:black;
+ }
 
-.App-list  {
-  list-style: none;
-  padding-right: 20px;
-  text-decoration: none;
-}
-
-.list-link{
-  text-decoration: inherit;
-  margin-right: 15px;
-  /* background-color: khaki; */
-  padding: 5px;
-}
-
-@media screen and (max-width: 968px) {
-
-  .App-nav{
-    background-color: khaki;
-    color: black;
-    
-  }
-  .App-list  {
-  list-style: none;
-  /* padding-right: 20px; */
-  text-decoration: none;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-}
-
-.list-link{
- text-decoration: inherit;
-  /* margin-right: 15px; */
-  /* background-color: khaki; */
-  
-} 
-}
-
+ .pages {
+   color:rgb(11, 95, 221);
+   text-align: center;
+   font-size: 3rem;
+   margin-top: 5%;
+ }
