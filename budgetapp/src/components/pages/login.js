@@ -1,11 +1,17 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import './login.css'
-import { Link } from 'react-router-dom';
-
+import { Link,useHistory } from 'react-router-dom';
 
 function Login() {
-    const handleFormSubmit = (event) => {
-        event.preventDefault();
+  
+    const [userName, setuserName] = useState();
+    const [password,setPassword] = useState();
+
+    function handleFormSubmit(e){
+        e.preventDefault();
+        // console.log(setuserName);
+        // console.log(setPassword);
+        // it is not showing, it could be after re-render, data is lost, no persistence.
     }
 
     return (
@@ -20,19 +26,17 @@ function Login() {
                                 placeholder="User Name"
                                 type="text"
                                 name="userName"
-
+                                onChange= { e => setuserName(e.target.value)}
                             />
-
                         </div>
-
                         <div className="password">
                             <label htmlFor="password">Password</label>
                             <input
                                 placeholder="Password"
                                 type="password"
                                 name="password"
+                                onChange = { e => setPassword(e.target.value)}
                             />
-
                         </div>
                         <div className="loginAccount">
                             <button type="submit" className={handleFormSubmit}>Login</button>

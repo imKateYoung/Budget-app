@@ -26,6 +26,7 @@ function Home() {
                     <h2 className="title">Why should I try to save money?</h2>
                     <p className="paragraph">You might need money for an emergency. You also might need to buy something more expensive, like a car. Saving money might help you buy a car, put a security deposit on an apartment, or pay for something else expensive.</p>
                 </div>
+                
 
             </div>
         </div>
