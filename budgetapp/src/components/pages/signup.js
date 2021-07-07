@@ -3,36 +3,37 @@ import './signup.css';
 import { Link } from 'react-router-dom';
 //import { Redirect } from 'react-router-dom';
 
+
+
 function Signup() {
 
-   const handleFormSubmit = (event) =>{
-       event.preventDefault();
-   }
+    
+
+    const handleFormSubmit = (e) =>{
+        e.preventDefault();
+    }
 
     return (
         <div>
             <div className="wrapper">
                 <div className="form-wrapper">
                     <h1>Create Account</h1>
-                    <form >
+                    <form onSubmit={handleFormSubmit}>
                         <div className="userName">
                             <label htmlFor="userName">Username</label>
-                            <input
-                                placeholder="User Name"
-                                type="text"
-                                name="userName"
+                            <input className="input"
+                                placeholder="User Name"                                
                             /> 
                         </div>                        
                         <div className="password">
                             <label htmlFor="password">Password</label>
-                            <input                              
-                                placeholder="Password"
-                                type="password"
-                                name="password"                              
+                            <input className="input"                             
+                                placeholder="Password"                                
+
                             />                           
                         </div>
                         <div className="createAccount">
-                            <button type="submit" className={handleFormSubmit}>Create Account</button>
+                            <button type="submit" >Create Account</button>
                             <Link to="/login"> Already Have an Account?</Link>
                         </div>
                     </form>
